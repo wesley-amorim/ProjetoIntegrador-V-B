@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    
+    
+    
+</head>
+<body>
+    <header>
+        <img src="logoUniversidade.png" alt="Logo" class="logo">
+        <h1>Redes de Computadores</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="mostrarTela('inicio')">Inicio</a></li>
+            <li><a href="#" onclick="mostrarTela('fundamentos')">Fundamentos em Redes</a></li>
+            <li><a href="#" onclick="mostrarTela('componentes')">Componentes de Redes</a></li>
+            <li><a href="#" onclick="mostrarTela('protocolos')">Protocolos de Comunicação</a></li>
+            <li><a href="#" onclick="mostrarTela('seguranca')">Segurança em Redes</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="inicio" class="projetoIntegra">
+            <h2>Olá professora Amélia!</h2>
+            <p>Seja muito bem vinda ao projeto integrador criado por <strong><u>Wesley Martins de Amorim</u><strong></strong></p>
+            
+        
+            
+        </section>
+        <section id="fundamentos" class="projetoIntegra">
+            <h2>Fundamentos em Redes de Computadores</h2>
+            <p><u>Conceito</u></p>
+            <p>Redes de computadores são sistemas que permitem a comunicação e a troca de dados entre diferentes dispositivos. Esses dispositivos podem incluir computadores, servidores, impressoras e outros equipamentos eletrônicos. O principal objetivo de uma rede de computadores é compartilhar recursos e informações de forma eficiente e segura.</p>
+            <p><u>Tipos de Redes:</u></p>
+            <ul>
+                
+                <li>LAN (Local Area Network):</li>
+                <p> Rede de área local que cobre uma pequena área geográfica, como uma residência, escritório ou prédio. É caracterizada por altas taxas de transmissão e baixa latência</p>
+                <li>WAN (Wide Area Network):</li>
+                <p> Rede de longa distância que cobre uma área geográfica extensa, como um país ou continente. Exemplos incluem a Internet e redes privadas corporativas.</p>
+                <li>MAN (Metropolitan Area Network):</li>
+                <p> Rede metropolitana que abrange uma cidade ou uma grande área urbana. É maior que uma LAN, mas menor que uma WAN.</p>
+                <li>PAN (Personal Area Network):</li>
+                <p> Rede pessoal que cobre uma área muito pequena, como um quarto ou uma área ao redor de um indivíduo. Exemplos incluem conexões Bluetooth entre dispositivos móveis e fones de ouvido.</p>
+                <li>CAN (Campus Area Network):</li>
+            
+                <p> Rede de campus que interliga diversas LANs dentro de uma área restrita, como um campus universitário ou complexo industrial.</p>
+            </ul>
+            <p><u>Tipos de Topologia:</u></p>
+            <ul>
+                <li>Topologia em Estrela:</li>
+                <p> Todos os dispositivos são conectados a um único ponto central, geralmente um switch ou hub. Se o ponto central falhar, toda a rede é afetada.</p>
+                <li>Topologia em Barramento:</li>
+                <p> Todos os dispositivos são conectados a um único cabo central. Dados transmitidos por um dispositivo são recebidos por todos os outros na rede. É simples e barata, mas pode ter problemas de colisão de dados.</p>
+                <li>Topologia em Anel:</li>
+                <p> Cada dispositivo tem duas conexões, uma para cada vizinho, formando um anel. Os dados circulam no anel até alcançarem o destino. Uma falha em qualquer ponto pode afetar toda a rede.</p>
+                <li>Topologia em Malha:</li>
+                <p> Cada dispositivo é conectado a vários outros, criando diversas rotas para os dados. É altamente redundante e confiável, mas complexa e cara de implementar.</p>
+                <li>Topologia em Árvore:</li>
+        
+                <p> Combinação de topologias em estrela e em barramento, com hierarquia de nós conectados de forma linear e ramificada. É escalável e adequada para redes grandes.</p>
+            </ul>
+        </section>
+        <section id="componentes" class="projetoIntegra">
+            <h2>Componentes de Redes</h2>
+            <p><u>Dispositivos de Redes:</u> </p>
+            <ul>
+                <li>Roteador</li>
+                <ol>   Encaminha os pacotes de dados entre diferentes redes, tem como característica o uso de tabelas de roteamento e protocolos especificos</ol>
+                <br><br>
+            
+                <li>Switches</li>
+                <ol>   Conectam dispositivos em uma mesma rede local.</ol>
+                <br><br>
+                <li>Access Points</li>
+                <ol>   Permite conecções sem fio em uma rede, ela se conecta a um switch ou routers, fornecendo assim, internet.</ol>
+                <br><br>
+                <li>Modems</li>
+                <ol>   É um dispositivo que troca informações entre o mundo externo ou a rede de longa distância (WAN) e a sua casa. Um modem transforma a conexão de entrada (cabo coaxial, linha telefônica, linha de fibra óptica ou outra) em uma conexão Ethernet, o que permite a conexão de um roteador Wi-Fi com a Internet</ol>
+                <br><br>
+                <li>FireWalls</li>
+                <ol>   Monitora tráfego de rede, podem ser dispositivos físicos ou mesmo softwares, trata-se então de sistema de segurança de rede de computadores que restringe o tráfego da Internet para a rede privada</ol>
+                <br><br>
+                <li>Gateways</li>
+                <ol>   Organiza a troca de informações entre um equipamento (notebook, smartphone, etc) e a internet. Naturalmente, o dispositivo é utilizado também para prover recursos de segurança.<ol>
+            </ul>
+
+            <p><u>Meios de Transmissão:</u></p>
+            <ul>
+                <li>Cabo de Par Trançado</li>
+                <ul>
+                    <li>CATEGORIA 1:</li>
+                    <p>  Não é mais reconhecida pela TIA (Associação da indústria de telecomunicação). Foram utilizadas em instalações telefônicas e redes antigas.</p>
+                    
+                    <li>CATEGORIA 2:</li>
+                    <p>  Também não é mais reconhecida pela TIA. Foi projetado para antigas redes token ring, assim como a categoria anterior.</p>
+                    <li>CATEGORIA 3:</li>
+                    <p>  Primeiro padrão desenvolvido especialmente para redes. É certificado para sinalização de até 16 MHz.</p>
+                    <li>CATEGORIA 4:</li>
+                    <p>  Não é mais reconhecida pela TIA. Utilizado para transmitir dados a uma frequência de até 20 MHz e dados a 20 Mbps. Substituído pela categoria 5.</p>
+                    <li>CATEGORIA 5:</li>
+                    <p>  É a mais utilizada, pois possui com qualquer placa de rede. A categoria reconhecida pela TIA atualmente é a CAT5e, que pode ser usado para frequências até 125 MHz.</p>
+                    <li>CATEGORIA 6:</li>
+                    <p>  Trabalha com a frequência de 250 MHz, mas seu alcance é de apenas 55 metros (a CAT6a permite até 100m). Suportam frequências de até 500 MHz e com maior poder de reduzir interferências e perda de sinal.</p>
+                    <li>CATEGORIA 7:</li>
+                
+                    <p>  Ainda está em desenvolvimento, visto que está sendo criada para permitir a criação de redes de 100Gbps em cabos de 15m usando fio de cobre.</p>
+                </ul>
+                <li>Cabo coaxial</li>
+                <ol>Constituído por um fio de cobre condutor revestido por um material isolante e rodeado duma blindagem. Utiliza um conector BNC. Apesar de poder reduzir os efeitos e sinais externos sobre os sinais que transmite, caiu em desuso e está presente somente em algumas redes antigas, visto que são mais propensos a mau contato, conectores mais caros e pouca flexibilidade.</ol>
+                <br><br>
+                <li>Fibra Ótica</li>
+                <ol>Tipo de transmissão mais rápido que existe, converte o sinal de dados em luz. O receptor, que recebe a luz, converte novamente esse sinal para dados. Pode transmitir grandes quantidades de informação com uma atenuação bastante baixa. Em compensação, é um tipo caro para compra e manutenção. Se classificam em Monomodo (só pode atender um sinal por vez, apresentam menor dispersão e podem possuir vários quilômetros entre um retransmissor e outro) e Multimodo (vários sinais ao mesmo tempo, por isso é recomendado para distâncias de, no máximo, 300 metros, visto que acima disso começam a ocorrer perdas.)</ol>
+                <br><br>  
+                <li>Wireless</li>
+                <ol>Uso em redes locais sem fio e dispositivos móveis, e que apesar da mobilidade e da fácil instalação, é muito suscetível a interfeências e com alcance muito limitado</ol>
+                <br><br>
+                <li>PLC (Power Line Communication)</li>
+                <ol>O PLC ou power line comunnication são as transmissões de dados através de rede elétrica, a vantagem é que utiliza uma infraestrutura já existente, porem com baixa performance afetada pela qualidade da rede elétrica.</ol>
+            </ul>
+        </section>
+        <section id="protocolos" class="projetoIntegra">
+            <h2>Protocolos de Comunicação</h2>
+            <p><u>TCP (Transmission Control Protocol):</u></p>
+            <p>O protocolo de controle de transmissão (TCP) é um padrão de comunicação que permite que programas aplicativos e dispositivos de computação intercambiem mensagens em uma rede. Ele foi projetado para enviar pacotes pela internet e garantir a entrega bem-sucedida de dados e mensagens nas redes.</p>
+            <p>Palavras chaves para definir TCP</p>
+            <ul>
+        
+                <li>Confiabilidade</li>
+                <li>Controle de Fluxo</li>
+                <li>Correção de Erros</li>
+            </ul>
+            <p>O TCP organiza os dados para que possam ser transmitidos entre um servidor e um cliente. Ele garante a integridade dos dados que são comunicados em uma rede. Antes de transmitir os dados, o TCP estabelece uma conexão entre uma origem e seu destino, que ele garante que permaneça ativa até que a comunicação comece. Então, ele divide grandes quantidades de dados em pacotes menores, garantindo que a integridade dos dados esteja em vigor durante todo o processo.</p>
+            <br><br>
+            <p><u>IP(Internet Protocol)</u></p>
+            <p>é um protocolo, ou conjunto de regras, para rotear e endereçar pacotes de dados para que eles possam viajar pelas redes e chegar ao destino correto. Os dados que atravessam a Internet são divididos em pedaços menores, chamados pacotes.</p>
+            <ul>
+                <li>IPv4</li>
+                <p>Usa Endereço de 32bits, permitindo limitados 4,3 bilhões de endereços únicos</p>
+                <li>PIv6</li>
+                <p>Utiliza endereços de 128 bits, permitindo uma quantidade extremamente grande de endereços únicos, projetados para substituir o IPv4 devido à escassez de endereços.</p>
+            </ul>
+        
+            <br><br>
+            <p><u>HTTP(HyperText Transfer Protocol):</u> </p>
+            <p>O Protocolo de transferência de hipertexto seguro (HTTPS) é a versão segura do HTTP, que é o principal protocolo usado para enviar dados entre um navegador web e um site. O HTTPS é criptografado para aumentar a segurança da transferência de dados. Isso é particularmente importante quando usuários transmitem dados sensíveis, como quando fazem login em uma conta de banco, serviço de e-mail ou provedor de seguro saúde.
+
+                Todos os sites, especialmente os que requerem credenciais de login, devem usar HTTPS.
+            <br><br> Suas Caracteristicas incluem: </p>
+            <ul>
+                <li>Stateless</li>
+                <p>Cada requisição é independente</p>
+                <br>
+                <li>Métodos HTTP</li>
+                <p>GET, POST, PUT, DELETE...</p>
+                <br>
+                <li>HTTPS</li>
+                <p>Versão segura do HTTP, utiliza protocolos especificos para criptografar a cominiucação entre cliente e servidor.</p>
+            </ul>
+        
+            <br><br>
+            <p><u>DNS(Domain Name System)</u></p>
+            <p>O termo DNS significa Domain Name System, ou sistema de nomes de domínios, e contém o registro de todos os domínios da internet. A sua função não é hospedar sites ou aplicações que criamos, mas sim permitir que as requisições cheguem aos locais corretos.
+
+                Um servidor DNS é feito única e exclusivamente para a tradução de domínios para endereços de IP </p>
+            <br><br>
+            Tipos de servidores DNS:
+            <ul>
+                <li>Servidor DNS primário</li>
+                <p>O servidor DNS primário é o servidor principal e que é responsável por armazenar e fornecer as informações de resolução de nomes de domínio. Por ser primário, quando um dispositivo precisa fazer a tradução de um nome de domínio, ele será o primeiro servidor a ser consultado. Além disso, ele tem seu próprio endereço IP.</p>
+                <br><br>
+                <li>Servidor DNS secundário</li>
+                <p>O servidor DNS secundário é um servidor de backup que replica as informações do servidor DNS primário. Ele é utilizado para aumentar a disponibilidade e a redundância do serviço de resolução de nomes de domínio, então, se o primeiros servidor não estiver disponível, o servidor secundário é usado para recuperar registros DNS.</p>
+                <br><br>
+            
+                <li>Servidor DNS terciário</li>
+                <p>Assim como o secundário, o servidor terciário também replica informações do servidor primário, como uma camada de backup. Caso o primeiro e o segundo servidor não estiverem disponíveis, ainda existe o servidor DNS terciário como um extra para garantir disponibilidade de registros DNS.</p>
+            </ul>
+
+
+        </section>
+        <section id="seguranca" class="projetoIntegra">
+            <h2>Segurança em Redes</h2>
+            <p><u>Firewall</u></p>
+            <p>Um firewall é um dispositivo de segurança da rede que monitora o tráfego de rede de entrada e saída e decide permitir ou bloquear tráfegos específicos de acordo com um conjunto definido de regras de segurança.</p>
+            <br><br>
+            <p>Tipos de firewalls incluem: </p>
+            <ul>
+                <li>Filtragem de Pacotes</li>
+                <p>Examina cabeçalhos de pacotes para filtrar com base em critérios como endereços IP, portas e protocolos.</p>
+                <br><br>
+
+                <li>Inspeção de estado</li>
+                <p>Monitora o estado das conexões de rede e permite ou bloqueia tráfego com base no contexto da comunicação.</p>
+                <br><br>
+    
+                <li>Firewalls de próxima geração</li>
+                <p>Oferecem capacidades avançadas como prevenção de intrusões (IPS) e controle de aplicações</p>
+                <br><br>
+            </ul>
+            <p><u>Criptografia</u></p>
+            <p>A criptografia é um dos elementos fundamentais da segurança cibernética. Ela é usada para proteger dados contra roubos, alterações ou comprometimentos. Ela funciona ao embaralhar dados em um código secreto que só pode ser desbloqueado com uma chave digital exclusiva.</p>
+            <ul>
+                <li>Simétrica</li>
+                <p> Usa a mesma chave para criptografar e descriptografar dados.</p>
+                <br><br>
+                <li>Assimétrica</li>
+                <p>Usa um par de chaves sendo uma pública e uma privada. A chave pública criptografa os dados, e a privada os descriptografa.</p>
+            </ul>
+
+            <p><u>VPN (Virtual Private Network)</u></p>
+            <p>Uma VPN cria uma conexão segura e criptografada sobre uma rede menos segura, como a internet, permitindo que os usuários acessem redes privadas de forma segura. <br><br> VPNs são usadas para:</p>
+            <ul>
+                <li>Acesso remoto seguro</li>
+                <p>Permite que funcionários acessem a rede corporativa de forma segura fora do escritório.</p>
+                <br><br>
+    
+                <li>Privacidade online</li>
+                <p>Protege a identidade e atividades online dos usuários.</p>
+                <br><br>
+            </ul>
+        </section>
+    </main>
+   
+</body>
+</html>
+

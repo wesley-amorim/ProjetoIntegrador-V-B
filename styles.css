@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    
+    background-color: white;
+    color: rgba(18, 48, 22, 0.733);
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+   
+    
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    max-width: 150px;
+}
+
+nav {
+    background-color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color:  rgba(0, 0, 0, 0.658);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.7s ease;
+}
+
+nav ul li a:hover {
+   
+   background-color: #4444447e;
+   border-radius: 9%;
+    
+}
+
+main {
+    padding: 20px;
+}
+
+.projetoIntegra {
+    display: none;
+    
+}
+
+.projetoIntegra.active {
+    display: block;
+    opacity: 1;
+}
+
+.projetoIntegra h3 {
+    margin-top: 20px;
+    color: #1218118e;
+}
+
+.projetoIntegra ul {
+    list-style: disc inside;
+    margin: 10px 0 20px 20px;
+}
+
+.projetoIntegra ul li {
+    margin-bottom: 10px;
+    color: rgba(219, 56, 56, 0.842);
+}
+
+.projetoIntegra p {
+    margin: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Wesley Martins de Amorim
